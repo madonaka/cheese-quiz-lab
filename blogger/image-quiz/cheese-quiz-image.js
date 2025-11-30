@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var correct = Number(currentData.correctIndex);
       if (selectedIndex === correct) {
-        setResult('정답입니다! 🎉 ' + (currentData.explanation || ''));
+        setResult('정답입니다 😊 ' + (currentData.explanation || ''));
       } else {
         var msg = '오답입니다. 정답은 ' + correct + '번입니다.';
         if (currentData.explanation) {

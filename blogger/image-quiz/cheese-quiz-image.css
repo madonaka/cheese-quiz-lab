@@ -1,0 +1,70 @@
+  .cheese-quiz-image-wrapper {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  .cheese-quiz-image-question {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .cheese-quiz-image-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+  }
+  .cheese-quiz-image-option {
+    border-radius: 16px;
+    padding: 0.6rem;
+    background: #f7f7fb;
+    border: 1px solid #e2e2ee;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+  }
+  .cheese-quiz-image-option:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  }
+  .cheese-quiz-image-option.selected {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 1px rgba(79,70,229,0.4);
+  }
+  .cheese-quiz-image-option-number {
+    font-size: 0.85rem;
+    font-weight: 600;
+    opacity: 0.7;
+  }
+  .cheese-quiz-image-option img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  .cheese-quiz-image-option-caption {
+    font-size: 0.85rem;
+    opacity: 0.8;
+  }
+  .cheese-quiz-image-footer {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .cheese-quiz-image-check-btn,
+  .cheese-quiz-image-reload-btn {
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid #d0d0d0;
+    background: #f9f9f9;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .cheese-quiz-image-result {
+    font-size: 0.9rem;
+    margin-left: auto;
+  }
